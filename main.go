@@ -208,7 +208,7 @@ func (c *hetznerDNSProviderSolver) CleanUp(ch *v1alpha1.ChallengeRequest) error 
 	// Display Results
 	fmt.Println("response Status : ", zResp.Status)
 	fmt.Println("response Headers : ", zResp.Header)
-	fmt.Println("response Body : ", zRespBody.Zones[0].ZoneID)
+	fmt.Println("response Body : ", zRespBody.Zones)
 	fmt.Println("response Body : ", name)
 
 	// Create request
